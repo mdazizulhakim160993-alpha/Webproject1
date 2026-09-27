@@ -1,0 +1,142 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Gradient Background */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top left,#06b6d4 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#7c3aed 0%,transparent 35%);
+    opacity:.25;
+    z-index:-2;
+}
+
+/* Glass Effect */
+.glass{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+/* Image */
+img{
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.05);
+}
+
+/* Buttons */
+.btn{
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* Social Icons */
+.fa-brands,
+.fa-facebook,
+.fa-github,
+.fa-linkedin,
+.fa-instagram,
+.fa-youtube{
+    transition:.3s;
+}
+
+.fa-facebook:hover{
+    color:#1877f2;
+}
+
+.fa-github:hover{
+    color:white;
+}
+
+.fa-linkedin:hover{
+    color:#0A66C2;
+}
+
+.fa-instagram:hover{
+    color:#E1306C;
+}
+
+.fa-youtube:hover{
+    color:red;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#06b6d4;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0891b2;
+}
+
+/* Section Title */
+section h2{
+    position:relative;
+}
+
+section h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#06b6d4;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-12px;
+    border-radius:20px;
+}
+
+/* Card Hover */
+.glass:hover{
+    transform:translateY(-8px);
+    transition:.4s;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+h1{
+    font-size:2.7rem !important;
+}
+
+section{
+    padding:80px 20px;
+}
+
+img{
+    width:280px !important;
+}
+
+}
